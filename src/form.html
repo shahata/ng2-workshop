@@ -3,17 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Ng2Workshop</title>
-  <base href=".">
+  <base href="/form.html">
   <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
-  {{content-for 'head'}}
-  <style>
-    span {
-      color: red;
-    }
-  </style>
+  <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
 </head>
 <body>
-  <todo-app></todo-app>
+  <form-app></form-app>
 
   <script src="vendor/systemjs/dist/system.src.js"></script>
   <script src="vendor/rxjs/bundles/Rx.js"></script>
@@ -29,7 +24,7 @@
         }
       }
     });
-    System.import('app.js').then(null, console.error.bind(console));
+    System.import('form.js').then(null, console.error.bind(console));
   </script>
 </body>
 </html>

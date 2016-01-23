@@ -1,5 +1,5 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {Ng2WorkshopApp} from './app/ng2-workshop';
+import {TodoApp} from './app/todo-app';
+import {TodoService} from './app/todo-service';
 
-
-bootstrap(Ng2WorkshopApp);
+bootstrap(TodoApp, [TodoService]);
